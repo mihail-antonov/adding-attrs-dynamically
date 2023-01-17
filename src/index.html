@@ -46,5 +46,19 @@
         </div>
       </div>
     </div>
+
+  <script type="application/javascript">
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      let products = document.querySelectorAll('.product');
+
+      products.forEach((product) => {
+
+        product.setAttribute('data-price', product.getElementsByClassName('price')[0].innerText);
+      });
+    });
+
+  </script>
   </body>
 </html>
